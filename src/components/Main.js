@@ -32,8 +32,8 @@ function Main() {
                 <Button prop1='Pesquisa Google' prop2={40} prop3={true}/>
             </div>
             <div>
-                <Texto objeto={...pessoa1}/>
-                <Texto objeto={...pessoa2}/>
+                <Texto {...pessoa1}/>
+                <Texto {...pessoa2}/>
             </div>
         </React.Fragment>
     );

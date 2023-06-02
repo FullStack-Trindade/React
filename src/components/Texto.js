@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 function Texto({nome, idade, catarinense}) {
    
-    function verificaUR(pessoa){
-        console.log(pessoa);
-        if(pessoa.catarinense){
+    function verificaUR(uR){
+        if(uR){
             return 'sim';
         }
         return 'não';
@@ -16,7 +15,7 @@ function Texto({nome, idade, catarinense}) {
         <React.Fragment>
             <p>Nome: {nome}</p>
             <p>Idade: {idade}</p>
-            {/* <p>Catarinense? {verificaUR()}</p> */}
+            {<p>Catarinense? {verificaUR(catarinense)}</p>}
         </React.Fragment>
     );
 }
